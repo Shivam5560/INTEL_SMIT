@@ -33,15 +33,8 @@ arr = list(dice.keys())
 p = st.selectbox("Source",arr)
 p = dice[p]
 
-new_dice = {'XGBoost':1,'Logistic Regression':2}
-new_arr = list(new_dice.keys())
-q = st.selectbox("ML MODEL",new_arr)
-q = new_dice[q]
-if q == 1:
-    file = open('intel_smit.pkl','rb')
-else:
-    file = open('intel_smit_logistic.pkl','rb')
 
+file = open('intel_smit.pkl','rb')
 model = pickle.load(file)
 
 def predict(): 
