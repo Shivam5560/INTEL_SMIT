@@ -13,7 +13,7 @@ The objective of this project are two fold:
 a. Create a prediction model which can determine whether the target source is a freshwater or not(i.e Either Safe or Unsafe).
 b. Make the model accessable to end users, and aid them solve real world problem 
 
-Steps to be followed :
+# Steps to be followed :
 1. Download the dataset from the above link(Unzip it) : https://s3-ap-southeast-1.amazonaws.com/he-public-data/datasetab75fb3.zip 
 2. Clone the repository: Execute the following code 
 
@@ -66,7 +66,7 @@ We can see Manganese,Turbidity,pH values are of high importances for correct pre
 <img width="1134" alt="Screenshot 2023-03-19 at 11 49 35 PM" src="https://user-images.githubusercontent.com/59795223/226198875-e6445033-6e36-44d4-b1e1-1bb066855a20.png">
 
 ## ROC Curve comparison B/w Logistic Regression and XGBoost Classifier
-
+That's why XGBoost Classifier is Used for ML MODELLING.
 <img width="1134" alt="Screenshot 2023-03-19 at 11 49 44 PM" src="https://user-images.githubusercontent.com/59795223/226199076-21bf1d32-7338-4fa1-8b85-9eec706dbfeb.png">
 
 
