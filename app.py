@@ -4,7 +4,7 @@ import pandas as pd
 import pickle
 
 
-col=['pH','Iron','Nitrate','Chloride','Lead','Zinc','Color','Turbidity','Fluoride','Copper','Odor','Sulfate','Chlorine','Manganese','Total Dissolved Solids','Source']
+
 st.title('Predict quality of Fresh water!:wave:')
 
 a = st.slider("pH value",0,14) 
@@ -33,16 +33,20 @@ arr = list(dice.keys())
 p = st.selectbox("Source",arr)
 p = dice[p]
 
-q = st.selectbox("ML MODEL",['XGBoost','Logistic Regression'])
-file = None
-if q == 'XGBoost':
+new_dice = {'XGBoost':1,'Logistic Regression':2}
+new_arr = list(new_dice.keys())
+q = st.selectbox("ML MODEL",newarr)
+if q == 1:
     file = open('intel_smit.pkl','rb')
 else:
     file = open('intel_smit_logistic.pkl','rb')
+
 model = pickle.load(file)
 
 def predict(): 
-    row = np.array([a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p]) 
+    row = np.array([a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p])
+    col=['pH','Iron','Nitrate','Chloride','Lead','Zinc','Color','Turbidity','Fluoride','Copper','Odor','Sulfate','Chlorine','Manganese','Total Dissolved Solids','Source']
+    
     X = pd.DataFrame([row], columns = col)
     prediction = model.predict(X)
     if prediction[0] == 1: 
