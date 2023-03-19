@@ -35,7 +35,7 @@ p = dice[p]
 
 new_dice = {'XGBoost':1,'Logistic Regression':2}
 new_arr = list(new_dice.keys())
-q = st.selectbox("ML MODEL",newarr)
+q = st.selectbox("ML MODEL",new_arr)
 if q == 1:
     file = open('intel_smit.pkl','rb')
 else:
