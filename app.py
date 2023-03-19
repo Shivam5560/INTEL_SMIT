@@ -45,12 +45,12 @@ with col4:
 file = open('intel_smit.pkl','rb')
 model = pickle.load(file)
 
+
 def predict(): 
     row = np.array([a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p])
     col=['pH','Iron','Nitrate','Chloride','Lead','Zinc','Color','Turbidity','Fluoride','Copper','Odor','Sulfate','Chlorine','Manganese','Total Dissolved Solids','Source']
     
     X = pd.DataFrame([row], columns = col)
-    print(X)
     prediction = model.predict(X)
     if prediction[0] == 1:
         st.title(':green[RESULT : SAFE TO DRINK:thumbsup:]')
@@ -58,7 +58,7 @@ def predict():
     else: 
         st.title(':red[RESULT : UNSAFE TO DRINK:thumbsdown:]')
     with st.sidebar:
-        with st.expander("Previous Input Values"):
+            st.title('**:blue[PREVIOUS INPUT VALUES]**')
             st.table(X.T)
 trigger = st.button('Predict', on_click=predict)
 
