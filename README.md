@@ -1,9 +1,17 @@
-# INTEL_SMIT
+# INTEL ONE API HACKATHON SMIT
+Link for the web App for Prediction : 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shivam5560-intel-smit-app-eleyjg.streamlit.app)
 
 # Problem Statement : Predict the quality of freshwater
 
-Link for the web App for Prediction : 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shivam5560-intel-smit-app-eleyjg.streamlit.app)
+### Expected Solution:
+In this track of the hackathon, we apply Machine learning concepts and leverage oneAPI capabilities to help global water security and environmental sustainability efforts by predicting whether freshwater is safe to drink and use for the ecosystems that rely on it. 
+
+# Objective 
+
+The objective of this project are two fold:
+a. Create a prediction model which can determine whether the target source is a freshwater or not(i.e Either Safe or Unsafe).
+b. Make the model accessable to end users, and aid them solve real world problem 
 
 Steps to be followed :
 1. Download the dataset from the above link(Unzip it) : https://s3-ap-southeast-1.amazonaws.com/he-public-data/datasetab75fb3.zip 
@@ -42,7 +50,24 @@ streamlit run app.py
 ```
 8. Without cloning it you can predict dircetly through :[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shivam5560-intel-smit-app-eleyjg.streamlit.app)
 
- 
+## Data Analysis
+Mapping of Color Attribute :  {'Colorless': 0, 'Faint Yellow': 1, 'Light Yellow': 2, 'Near Colorless': 3, 'Yellow': 4, 'Other': 5}
+Mapping of Source Attribute :  {'Aquifer': 0, 'Ground': 1, 'Lake': 2, 'Reservoir': 3, 'River': 4, 'Spring': 5, 'Stream': 6, 'Well': 7, 'Other': 8}
+
+## Feature Enginerring
+Index,day,month attributes are removed as it does not correlate with the target data values.
+<img width="1296" alt="Screenshot 2023-03-19 at 11 50 04 PM" src="https://user-images.githubusercontent.com/59795223/226198894-b5505292-3b9b-47b8-81fc-35865950e117.png">
+We have removed Water Temperature,Air Temperature,Conductivity as it does not correlate with the target value.
+
+
+
+## Feature Importances after fitting values in XGBoost Classifier
+We can see Manganese,Turbidity,pH values are of high importances for correct prediction of the target value.
+<img width="1134" alt="Screenshot 2023-03-19 at 11 49 35 PM" src="https://user-images.githubusercontent.com/59795223/226198875-e6445033-6e36-44d4-b1e1-1bb066855a20.png">
+
+## ROC Curve comparison B/w Logistic Regression and XGBoost Classifier
+
+<img width="1134" alt="Screenshot 2023-03-19 at 11 49 44 PM" src="https://user-images.githubusercontent.com/59795223/226199076-21bf1d32-7338-4fa1-8b85-9eec706dbfeb.png">
 
 
 
