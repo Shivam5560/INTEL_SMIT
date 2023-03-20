@@ -42,6 +42,8 @@ streamlit run app.py
 ```
 10. Without cloning it you can predict dircetly through :[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shivam5560-intel-smit-app-eleyjg.streamlit.app)
 
+# XGBOOST IS USED AS A ML MODEL , RANDOM FOREST CLASSIFIER PICKLE SIZE IS HUGE(AROUND 8GB OF SPACE REQUIRED) AND BOTH HAVE NEARLY NO DIFFERENCE SO WE USE XGBOOST CLASSIFIER
+
 ## Data Analysis
 Mapping of Color Attribute :  {'Colorless': 0, 'Faint Yellow': 1, 'Light Yellow': 2, 'Near Colorless': 3, 'Yellow': 4, 'Other': 5}
 Mapping of Source Attribute :  {'Aquifer': 0, 'Ground': 1, 'Lake': 2, 'Reservoir': 3, 'River': 4, 'Spring': 5, 'Stream': 6, 'Well': 7, 'Other': 8}
