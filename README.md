@@ -9,7 +9,7 @@ In this track of the hackathon, we apply Machine learning concepts and leverage 
 
 # Objective 
 
-The objective of this project are two fold:
+The objective of this project are :
 a. Create a prediction model which can determine whether the target source is a freshwater or not(i.e Either Safe or Unsafe).
 b. Make the model accessable to end users, and aid them solve real world problem 
 
@@ -21,7 +21,7 @@ b. Make the model accessable to end users, and aid them solve real world problem
 5. Copy the path of extracted folder.
 6. Go to the repository folder
 ```
-cd INTEL_SMIT
+cd INTEL_SMIT-main
 ```
 
 7. Install the needed libraries by executing below comands
@@ -33,10 +33,10 @@ pip install warnings numpy seaborn matplotlib scikit-learn scikit-learn-intelex 
 pip install -r requirements.txt
 ```
 
-8. Open the ipynb file 'Code_FreshwaterPrediction.ipynb' and change the path in the ipynb file from circled part to the path of file in your system.
+8. Open the ipynb file 'intel_smit.ipynb' and change the path in the ipynb file from circled part to the path of file in your system.
 ![WhatsApp Image 2023-03-19 at 11 31 48 PM](https://user-images.githubusercontent.com/59795223/226197342-9cff07b5-734c-498e-b7b9-ac9c84a0cf1f.jpeg)
 
-9. Run the following command  for locally running of the web app fro predicting the target variable's output.
+9. Run the following command  for locally running of the web app for predicting the target variable's output.
 ```
 streamlit run app.py
 ```
