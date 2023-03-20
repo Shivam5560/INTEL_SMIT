@@ -36,16 +36,11 @@ pip install -r requirements.txt
 8. Open the ipynb file 'Code_FreshwaterPrediction.ipynb' and change the path in the ipynb file from circled part to the path of file in your system.
 ![WhatsApp Image 2023-03-19 at 11 31 48 PM](https://user-images.githubusercontent.com/59795223/226197342-9cff07b5-734c-498e-b7b9-ac9c84a0cf1f.jpeg)
 
-
-9. Execute the python code and copy the model pickle file with the name 'intel_smit.pkl' in the project directory 
-
-<img width="1312" alt="Screenshot 2023-03-19 at 11 42 32 PM" src="https://user-images.githubusercontent.com/59795223/226198185-fb91ecdd-749f-4e99-ac04-dbabb5f61b35.png">
-
-10. Run the following command  for locally running of the web app fro predicting the target variable's output.
+9. Run the following command  for locally running of the web app fro predicting the target variable's output.
 ```
 streamlit run app.py
 ```
-11. Without cloning it you can predict dircetly through :[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shivam5560-intel-smit-app-eleyjg.streamlit.app)
+10. Without cloning it you can predict dircetly through :[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shivam5560-intel-smit-app-eleyjg.streamlit.app)
 
 ## Data Analysis
 Mapping of Color Attribute :  {'Colorless': 0, 'Faint Yellow': 1, 'Light Yellow': 2, 'Near Colorless': 3, 'Yellow': 4, 'Other': 5}
